@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b7e27f7f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><span>A</span>RYA</h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">My Experience</a></li>
+                    <li><a href="#portfolio">My Projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Aishwarya</span><br> from Bengaluru</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------------About ------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Software Engineer at Bosch with 
+                        1 year of experience in developing and testing security features for ABS in two-wheelers.
+                        Proficient in software and web development, 
+                        with strong problem-solving skills and a 
+                        commitment to producing high-quality
+                        code.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML, CSS, javascript, React.js, Django, Node.js, SQL</li>
+                                <li><span>Programming Languages</span><br>C, C++ with Object oriented programming, Python</li>
+                                <li><span>Others</span><br>Networking Concepts, Github, Linux</li>
+                                <li><span>Soft Skills</span><br>Communication and team collaboration</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>KLE Technological University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; May 2019 - June 2023</span><br>CGPA 8.59</li>
+                                <li><span>Dr R B Patil Mahesh PU College &nbsp;&nbsp; May 2017 - April 2019</span><br>Percentage 96.67</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>Web Development Bootcamp 2023</span><br>Udemy</li>
+                                <li><span>Python for Everybody</span><br>Coursera</li>
+                                <li><span>Professional Communication</span><br>Coursera</li>
+                                <li><span>Network Security Associate 1 and 2</span><br>Fortinet</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!------------------------------EXPERIENCE------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Experience</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <h2>Bosch Global S/w Technologies</h2>
+                    <p>Software Engineer</p>
+                    <a href ="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Pravinya Technologies</h2>
+                    <p>Django Developer</p>
+                    <a href ="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Indian Railways [IRCTC]</h2>
+                    <p>React.js Developer</p>
+                    <a href ="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!------------------------PORTFOLIO-------------------------->
+
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/w1.jpg">
+                <div class="layer">
+                    <h3>Concept Drift</h3>
+                    <p>alerts the model about changing patterns, and helps make better predictions for future references by avoiding any wrong predictions.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/w2.jpg" alt="">
+                <div class="layer">
+                    <h3>Gender Classification</h3>
+                    <p>classification model takes the audio of a person as input and extracts the features from the audio clip given like MFCC and classifies the gender of a person.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/w3.jpg" alt="">
+                <div class="layer">
+                    <h3>Image Processing</h3>
+                    <p>Gained hands-on experience with CNNs for image recognition and deepened knowledge of AI, Machine Learning, and Deep Learning through key projects.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+             </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+
+</div>
+
+<!--------------------------CONTACT----------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>aprchallanavar@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9108233734</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/aishwarya-challanavar-a223711b9/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/aishwarya-challanavar-a223711b9/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/aishwarya-challanavar-a223711b9/"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="images/Aishwarya Challanavar.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©️ ARYA. Made with love <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+    <script>
+        // Select all elements with the class "tab-links" and store them in the variable 'tablinks'
+        var tablinks = document.getElementsByClassName("tab-links");
+        // Select all elements with the class "tab-contents" and store them in the variable 'tabcontents'
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        // Function to switch between different tabs (skills, education, certifications)
+        function opentab(tabname) {
+            // This 'for' loop goes through each tablink (Skills, Education, Certifications)
+            for (tablink of tablinks) {
+                // Removes the 'active-link' class from the current tablink, so it no longer appears highlighted
+                tablink.classList.remove("active-link");
+            }
+
+            // This 'for' loop goes through each tabcontent (div that shows the content for the clicked tab)
+            for (tabcontent of tabcontents) {
+                // Removes the 'active-tab' class from the current tabcontent, so it hides the previously visible content
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Adds the 'active-link' class to the tab that was clicked, making it highlighted
+            event.currentTarget.classList.add("active-link");
+            // Adds the 'active-tab' class to the tabcontent associated with the clicked tab, making it visible
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
